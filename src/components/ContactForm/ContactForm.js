@@ -27,7 +27,7 @@ function ContactForm() {
   const onSubmitForm = e => {
     e.preventDefault();
     if (items.find(item => name === item.name)) {
-      alert(`${items.name} is already in contacts`);
+      alert(`${name} is already in contacts`);
       reset();
       return;
     }
